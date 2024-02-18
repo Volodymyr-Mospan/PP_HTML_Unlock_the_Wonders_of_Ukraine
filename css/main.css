@@ -1,0 +1,57 @@
+:root {
+  --non-active: #5a5959;
+  --text-color: #fff;
+  --but: #394014;
+  --stars: #ae990b;
+  --bg: #141a19;
+  --input: #b9b9b9;
+
+  --font-family: 'Jomolhari', serif;
+  --second-family: 'Lato', sans-serif;
+}
+
+body {
+  /* padding: 16px; */
+
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+
+  background-color: var(--bg);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.button {
+  background: var(--but);
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: inherit;
+  font-size: 40px;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.hero-title-accent {
+  font-size: 64px;
+}

@@ -5,50 +5,57 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <style>
-      body {
-        background-color: bisque;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <!-- <div id="app"></div>
     <script type="module" src="/main.js"></script> -->
 
     <header>
       <nav>
-        <a href="./"><img src="./public/logo.svg" alt="logo of site" /></a>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Tours</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contacts</a></li>
+        <a href="./"><img src="./images//logo.svg" alt="logo of site" /></a>
+
+        <button type="button">X</button>
+
+        <ul class="list">
+          <li><a class="link nav-link" href="#">About us</a></li>
+          <li><a class="link nav-link" href="#">Tours</a></li>
+          <li><a class="link nav-link" href="#">Gallery</a></li>
+          <li><a class="link nav-link" href="#">Contacts</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <p>
-          Unlock the Wonders <br />
-          of
-        </p>
-        <h1>Ukraine</h1>
-        <a href="#">Our tours</a>
-        <ul>
+        <h1 class="title hero-title">
+          Unlock the Wonders of
+          <span class="hero-title-accent">Ukraine</span>
+        </h1>
+        <a class="link button" href="#">Our tours</a>
+
+        <ul class="list">
           <li>
-            <a href="#" aria-label="link to Instagram"
-              ><img src="./public/ph_instagram-logo.svg" alt="link to instagram"
+            <a class="link" href="#" aria-label="link to Instagram"
+              ><img src="./images//ph_instagram-logo.svg" alt="link to instagram"
             /></a>
           </li>
           <li>
-            <a href="#" aria-label="link to Facebook"
-              ><img src="./public/ph_facebook-logo.svg" alt="link to facebook"
+            <a class="link" href="#" aria-label="link to Facebook"
+              ><img src="./images//ph_facebook-logo.svg" alt="link to facebook"
             /></a>
           </li>
           <li>
-            <a href="#" aria-label="link to Telegram"
-              ><img src="./public/ph_telegram-logo.svg" alt="link to telegram"
+            <a class="link" href="#" aria-label="link to Telegram"
+              ><img src="./images//ph_telegram-logo.svg" alt="link to telegram"
             /></a>
           </li>
         </ul>
@@ -56,6 +63,7 @@
 
       <section>
         <h2>About us</h2>
+
         <p>
           Welcome to our travel agency in Ukraine! We are a locally owned and operated travel agency
           that specializes in creating unique and unforgettable travel experiences for our clients.
@@ -100,30 +108,30 @@
 
         <button type="button">Book</button>
 
-        <button type="button"><img src="./public/arrow-left.svg" alt="arrow left" /></button>
-        <button type="button"><img src="./public/arrow-right.svg" alt="arrow right" /></button>
+        <button type="button"><img src="./images/" alt="arrow left" /></button>
+        <button type="button"><img src="./images//arrow-right.svg" alt="arrow right" /></button>
       </section>
 
       <section>
         <h2>Gallery</h2>
-        <ul>
+        <ul class="list">
           <li><img src="./images/unsplash_bILJtn0d2cM.jpg" alt="snowy trees" height="494" /></li>
           <li><img src="./images/unsplash_134-72ac7W4.jpg" alt="people under the starry sky" /></li>
           <li><img src="./images/unsplash_qVJmevSKz4Y.jpg" alt="railway between trees" /></li>
           <li><img src="./images/unsplash_sosna.jpg" alt="a tree by the river" /></li>
         </ul>
 
-        <button type="button"><img src="./public/arrow-left.svg" alt="arrow left" /></button>
-        <button type="button"><img src="./public/arrow-right.svg" alt="arrow right" /></button>
+        <button type="button"><img src="./images/" alt="arrow left" /></button>
+        <button type="button"><img src="./images//arrow-right.svg" alt="arrow right" /></button>
       </section>
 
       <section>
         <h2>Reviews</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/dmitro.jpg" alt="Dmirto's photo" />
             <h3>Dmitro</h3>
-            <ul>
+            <ul class="list">
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
@@ -139,7 +147,7 @@
           <li>
             <img src="./images/alisa.jpg" alt="Alisa's photo" />
             <h3>Alisa</h3>
-            <ul>
+            <ul class="list">
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
@@ -156,7 +164,7 @@
           <li>
             <img src="./images/marry.jpg" alt="Dmirto's photo" />
             <h3>Marry</h3>
-            <ul>
+            <ul class="list">
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
@@ -172,7 +180,7 @@
           <li>
             <img src="./images/fedir.jpg" alt="Dmirto's photo" />
             <h3>Fedir</h3>
-            <ul>
+            <ul class="list">
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
               <li><img src="./images/star.svg" alt="star" /></li>
@@ -187,12 +195,12 @@
           </li>
         </ul>
 
-        <button type="button"><img src="./public/arrow-left.svg" alt="arrow left" /></button>
-        <button type="button"><img src="./public/arrow-right.svg" alt="arrow right" /></button>
+        <button type="button"><img src="./images/" alt="arrow left" /></button>
+        <button type="button"><img src="./images//arrow-right.svg" alt="arrow right" /></button>
       </section>
 
       <section>
-        <h2>Application of trip</h2>
+        <h2>Trip application</h2>
 
         <h3>Start travel</h3>
         <p>
@@ -205,32 +213,32 @@
       </section>
     </main>
     <footer>
-      <a href="./"><img src="./public/logo.svg" alt="logo of site" height="192" /></a>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contacts</a></li>
+      <a href="./"><img src="./images//logo.svg" alt="logo of site" height="192" /></a>
+      <ul class="list">
+        <li><a class="link" href="#">About us</a></li>
+        <li><a class="link" href="#">Tours</a></li>
+        <li><a class="link" href="#">Gallery</a></li>
+        <li><a class="link" href="#">Contacts</a></li>
       </ul>
 
       <a href="tel:+380971231111">+38097-123-11-11</a>
       <a href="mailto:WondersOfUkraine@gmail.com">WondersOfUkraine@gmail.com</a>
       <address>Lviv, Zaporyzhka, 198</address>
 
-      <ul>
+      <ul class="list">
         <li>
-          <a href="#" aria-label="link to Instagram"
-            ><img src="./public/ph_instagram-logo.svg" alt="link to instagram"
+          <a class="link" href="#" aria-label="link to Instagram"
+            ><img src="./images//ph_instagram-logo.svg" alt="link to instagram"
           /></a>
         </li>
         <li>
-          <a href="#" aria-label="link to Facebook"
-            ><img src="./public/ph_facebook-logo.svg" alt="link to facebook"
+          <a class="link" href="#" aria-label="link to Facebook"
+            ><img src="./images//ph_facebook-logo.svg" alt="link to facebook"
           /></a>
         </li>
         <li>
-          <a href="#" aria-label="link to Telegram"
-            ><img src="./public/ph_telegram-logo.svg" alt="link to telegram"
+          <a class="link" href="#" aria-label="link to Telegram"
+            ><img src="./images//ph_telegram-logo.svg" alt="link to telegram"
           /></a>
         </li>
       </ul>
