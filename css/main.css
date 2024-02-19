@@ -14,13 +14,15 @@ body {
   /* padding: 16px; */
 
   font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.01em;
   color: var(--text-color);
 
   background-color: var(--bg);
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -29,6 +31,7 @@ body {
 
 .link {
   text-decoration: none;
+  letter-spacing: 0.01em;
   color: inherit;
 }
 
@@ -38,6 +41,8 @@ body {
 }
 
 .button {
+  font-family: var(--font-family);
+  font-size: 16px;
   background: var(--but);
 }
 
@@ -45,6 +50,12 @@ body {
   font-family: var(--font-family);
   font-weight: inherit;
   font-size: 40px;
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  font-size: 24px;
+  letter-spacing: 0.01em;
 }
 
 .hero-title {
@@ -54,4 +65,10 @@ body {
 
 .hero-title-accent {
   font-size: 64px;
+  letter-spacing: 0.01em;
+}
+
+.text {
+  font-size: 16px;
+  letter-spacing: 0.01em;
 }
