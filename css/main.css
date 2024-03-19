@@ -21,6 +21,14 @@ body {
   background-color: var(--bg);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 img {
   display: block;
 }
@@ -42,6 +50,8 @@ img {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -52,10 +62,14 @@ img {
 }
 
 .button {
+  padding: 12px 52px;
+
   font-family: var(--font-family);
   font-size: 16px;
+
   color: inherit;
   background: var(--but);
+  border-radius: 4px;
 }
 
 .title {
@@ -63,6 +77,8 @@ img {
   font-weight: inherit;
   font-size: 40px;
   letter-spacing: 0.01em;
+
+  text-align: center;
 }
 
 .subtitle {
@@ -75,7 +91,18 @@ img {
   letter-spacing: 0.01em;
 }
 
+.text {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+
 /* ========================= Haeder ========================= */
+.main-header {
+  position: absolute;
+
+  width: 100%;
+  padding: 16px 0;
+}
 
 .nav {
   display: flex;
@@ -95,27 +122,40 @@ img {
 
 /* ========================= Hero ========================= */
 
-.hero {
+/* .hero {
   min-height: 100svh;
+} */
+
+.hero-container {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
-  text-align: center;
+  margin-bottom: 64px;
+}
+
+.hero-title-main {
+  display: block;
   font-size: 24px;
 }
 
 .hero-title-accent {
+  display: block;
+
   font-size: 64px;
   letter-spacing: 0.01em;
 }
 
+/* ========================= Hero ========================= */
+
+/* ========================= ____ ========================= */
+
 .form-title {
   font-size: 32px;
-  letter-spacing: 0.01em;
-}
-
-.text {
-  font-size: 16px;
   letter-spacing: 0.01em;
 }
 
