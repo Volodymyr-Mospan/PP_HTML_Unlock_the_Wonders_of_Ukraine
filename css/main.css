@@ -122,12 +122,22 @@ img {
 
 /* ========================= Hero ========================= */
 
-/* .hero {
-  min-height: 100svh;
-} */
+.hero {
+  background-image: radial-gradient(
+      54.53% 54.53% at 56.24% 51.15%,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(180deg, rgba(20, 26, 25, 0.8) 0%, rgba(0, 0, 0, 0) 25%),
+    url(../images/bg_hero_mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .hero-container {
+  position: relative;
   min-height: 100svh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +158,14 @@ img {
 
   font-size: 64px;
   letter-spacing: 0.01em;
+}
+
+.hero-social-list {
+  position: absolute;
+  bottom: 32px;
+
+  display: flex;
+  gap: 15px;
 }
 
 /* ========================= Hero ========================= */
