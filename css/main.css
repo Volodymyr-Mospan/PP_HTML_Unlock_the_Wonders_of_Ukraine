@@ -65,14 +65,36 @@ img {
 }
 
 .button {
-  padding: 12px 52px;
+  width: 100%;
+  padding: 16px 52px;
+  margin-top: 32px;
 
   font-family: var(--font-family);
   font-size: 16px;
+  line-height: 1.4;
 
   color: inherit;
-  background: var(--but);
+  background-color: var(--but);
+  border-style: none;
   border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.arrow-thumb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-arrow {
+  padding: 0;
+  background-color: inherit;
+
+  width: auto;
+}
+
+.arrow-thumb {
+  display: flex;
 }
 
 .title {
@@ -87,6 +109,8 @@ img {
 }
 
 .subtitle {
+  margin-bottom: 16px;
+
   font-size: 24px;
   letter-spacing: 0.01em;
 
@@ -94,15 +118,15 @@ img {
 }
 
 .sub-subtitle {
+  margin-bottom: 16px;
+
   font-size: 18px;
   letter-spacing: 0.01em;
+
+  text-align: start;
 }
 
-.text {
-  letter-spacing: 0.01em;
-}
-
-.text + .text {
+p + p {
   margin-top: 32px;
 }
 
@@ -170,6 +194,11 @@ img {
   letter-spacing: 0.01em;
 }
 
+.hero-botton {
+  width: auto;
+  padding: 12px 52px;
+}
+
 .hero-social-list {
   position: absolute;
   bottom: 32px;
@@ -186,9 +215,11 @@ img {
   padding-top: 80px;
 }
 
-.tour-foto-thumb {
-  outline: 5px dashed tomato;
+/* ========================= About Us ========================= */
 
+/* ========================= Our tours ========================= */
+
+.tour-foto-thumb {
   position: relative;
 
   width: 100%;
@@ -202,10 +233,26 @@ img {
   position: absolute;
   top: 0;
   left: 50%;
+  height: 100%;
 
   transform: translateX(-50%);
 }
-/* ========================= About Us ========================= */
+
+.includes-thumb {
+  margin-top: 16px;
+}
+
+.includes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.includes-item {
+  display: flex;
+  gap: 16px;
+}
+
+/* ========================= Our tours ========================= */
 
 .form-title {
   font-size: 32px;
