@@ -11,9 +11,9 @@
 }
 
 body {
-  /* padding: 16px; */
-
   font-family: var(--second-family);
+  font-size: 16px;
+
   line-height: 1.4;
   letter-spacing: 0.01em;
   color: var(--text-color);
@@ -31,6 +31,9 @@ p {
 
 img {
   display: block;
+}
+.section {
+  padding: 40px 0;
 }
 
 .container {
@@ -73,6 +76,8 @@ img {
 }
 
 .title {
+  margin-bottom: 32px;
+
   font-family: var(--font-family);
   font-weight: inherit;
   font-size: 40px;
@@ -84,6 +89,8 @@ img {
 .subtitle {
   font-size: 24px;
   letter-spacing: 0.01em;
+
+  text-align: start;
 }
 
 .sub-subtitle {
@@ -92,8 +99,11 @@ img {
 }
 
 .text {
-  font-size: 16px;
   letter-spacing: 0.01em;
+}
+
+.text + .text {
+  margin-top: 32px;
 }
 
 /* ========================= Haeder ========================= */
@@ -170,7 +180,32 @@ img {
 
 /* ========================= Hero ========================= */
 
-/* ========================= ____ ========================= */
+/* ========================= About Us ========================= */
+
+.about-section {
+  padding-top: 80px;
+}
+
+.tour-foto-thumb {
+  outline: 5px dashed tomato;
+
+  position: relative;
+
+  width: 100%;
+  height: 409px;
+  margin-bottom: 16px;
+
+  overflow: hidden;
+}
+
+.tour-foto {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+/* ========================= About Us ========================= */
 
 .form-title {
   font-size: 32px;
