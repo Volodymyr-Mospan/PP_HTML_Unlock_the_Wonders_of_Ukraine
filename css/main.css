@@ -268,12 +268,13 @@ p + p {
 /* ========================= Reviews ========================= */
 
 .reviews {
-  background-image: linear-gradient(180deg, #141a19 5%, rgba(0, 0, 0, 0) 90%),
-    linear-gradient(360deg, hwb(170 8% 90%) 5%, rgba(0, 0, 0, 0) 90%),
+  background-image: linear-gradient(to bottom, var(--bg) 0% 5%, rgba(0, 0, 0, 0) 90%),
+    linear-gradient(to top, var(--bg) 0% 5%, rgba(0, 0, 0, 0) 90%),
     url(../images/reviews-bg-mobal.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+
+  /* background-size: 100%, 100%, cover; */
 }
 
 .reviews-thumb {
