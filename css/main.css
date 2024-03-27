@@ -39,6 +39,8 @@ img {
 .container {
   padding: 0 16px;
   margin: 0 auto;
+
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -226,7 +228,7 @@ p + p {
   height: 409px;
   margin-bottom: 16px;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .tour-foto {
@@ -253,6 +255,52 @@ p + p {
 }
 
 /* ========================= Our tours ========================= */
+
+/* ========================= Gallery ========================= */
+
+.gallery-thumb {
+  display: flex;
+  overflow: auto;
+}
+
+/* ========================= Gallery ========================= */
+
+/* ========================= Reviews ========================= */
+
+.reviews {
+  background-image: linear-gradient(180deg, #141a19 5%, rgba(0, 0, 0, 0) 90%),
+    linear-gradient(360deg, hwb(170 8% 90%) 5%, rgba(0, 0, 0, 0) 90%),
+    url(../images/reviews-bg-mobal.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.reviews-thumb {
+  display: flex;
+  min-height: 343px;
+  padding: 32px;
+
+  border: 1px solid var(--text-color);
+}
+
+.reviewer {
+  display: flex;
+  column-gap: 24px;
+  margin-bottom: 32px;
+
+  align-items: center;
+}
+
+.reviewer-name {
+  margin-bottom: 11px;
+}
+
+.review-rating {
+  display: flex;
+}
+
+/* ========================= Reviews ========================= */
 
 .form-title {
   font-size: 32px;
