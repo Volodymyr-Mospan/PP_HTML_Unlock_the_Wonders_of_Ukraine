@@ -328,6 +328,8 @@ p + p {
   letter-spacing: 0.01em;
 }
 
+/* ========================= Trip application ========================= */
+
 .footer {
   font-family: var(--font-family);
 }

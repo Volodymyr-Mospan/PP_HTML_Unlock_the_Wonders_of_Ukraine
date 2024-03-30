@@ -327,17 +327,15 @@
           <p>We are ready to answer any questions and help choose the best tour</p>
 
           <form>
-            <label>
-              Name
-              <input type="text" placeholder="Enter your name" />
-            </label>
-            <label>
-              Phone
-              <input type="tel" placeholder="+380__-___-__-__" />
-            </label>
-            <label>
-              <textarea name="" id="" placeholder="Your message"></textarea>
-            </label>
+            <label for="user-name"> Name </label>
+            <input type="text" id="user-name" name="user-name" placeholder="Enter your name" />
+
+            <label for="user-phone"> Phone </label>
+            <input type="tel" id="user-phone" name="user-phone" placeholder="+380__-___-__-__" />
+
+            <textarea name="" id="" placeholder="Your message"></textarea>
+
+            <button class="button" type="submit">Send</button>
           </form>
         </div>
       </section>
