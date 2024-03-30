@@ -303,6 +303,24 @@ p + p {
 
 /* ========================= Reviews ========================= */
 
+/* ========================= Trip application ========================= */
+
+.trip-application {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  background-image: url(../images/trip-application-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.trip-application-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* ========================= Trip application ========================= */
+
 .form-title {
   font-size: 32px;
   letter-spacing: 0.01em;
